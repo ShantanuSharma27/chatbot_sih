@@ -12,7 +12,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # Set up OpenAI API credentials
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY='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'
 
 
 # Define the default route to return the index.html file
