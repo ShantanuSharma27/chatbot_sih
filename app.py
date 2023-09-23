@@ -10,6 +10,9 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
+with open("/etc/secrets/file.env", "r") as file:
+    content = file.read()
+    print(content)
 
 # Set up OpenAI API credentials
 openai.api_key_path = "/etc/secrets/file.env"
