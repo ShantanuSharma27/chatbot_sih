@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request
 import openai
+
+
+from dotenv import load_dotenv
 import os
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
