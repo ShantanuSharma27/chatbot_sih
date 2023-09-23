@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import openai
-
+import os
 
 # Initialize Flask app
 app = Flask(__name__)
