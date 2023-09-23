@@ -10,7 +10,7 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
-with open("/etc/secrets/file.env", "r") as file:
+with open("/etc/secrets/.env", "r") as file:
     content = file.read().strip()  # Strip leading/trailing whitespace
     print(content)  # Verify that it's correctly stripped
     openai.api_key = content
